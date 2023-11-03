@@ -1,0 +1,148 @@
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the "Skip to main content" link for accessibility */
+.alert-info {
+    background-color: #00BCD4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Nav links styles for mobile */
+.nav-links {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    gap: 10px;
+    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+}
+
+.nav-links li {
+    background-color: #E0E0E0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* this ensures the nav bar spans the full width */
+    background-color: #E0E0E0; /* or whatever color you want */
+    z-index: 1000; /* keep the navbar above other elements */
+}
+
+/* Image header styles */
+.header-img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Ensure images are responsive */
+.header-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Common styles for main content and sub-section */
+.main, .sub-section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+/* Media query for desktop layout */
+@media (min-width: 768px) {
+    body {
+        padding-top: 60px; /* adjust this value based on the height of your navbar */
+    }
+    /* Hide the "Skip to main content" link on desktop */
+    .alert-info {
+        display: none;
+    }
+
+    /* Nav links styles for desktop */
+    .nav-links {
+        display: flex;
+        flex-direction: row; /* Align items horizontally on desktop */
+        justify-content: flex-end;
+        background: #fff;
+    }
+
+    /* Split main content and sub-section side by side on desktop */
+    .main, .sub-section {
+        display: inline-block;
+        width: 48%; /* Allow for some margin between the two sections */
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        background-color: #fff; /* or whatever color you want */
+        z-index: 1000; /* keep the navbar above other elements */
+    }
+    .nav-links li {
+        background-color: #fff;
+        text-align: center;
+        padding-right: 5px;
+    }
+    h1 {
+        position: absolute;
+        top: 5px;
+        z-index: 1001;
+    }
+
+
+}
+
+/* Styling for the entire footer */
+footer {
+    align-content: center;
+    padding: 10px 0;
+    background-color: darkgray; /* Adding a subtle background for the footer */
+}
+
+/* Styling for the social media links container */
+#social-media-links {
+    display: flex;
+    justify-content: center; /* Centering the icons horizontally */
+    align-items: center; /* Vertically centering the icons */
+    gap: 15px; /* Spacing between each icon */
+    padding-top: 10px; /* Some spacing above the icons */
+}
+
+/* Styling for each individual social media link */
+#social-media-links a {
+    display: inline-flex; /* Ensuring the icon centers within its link box */
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease; /* Smooth scaling transition for hover effect */
+}
+
+#social-media-links a:hover {
+    transform: scale(1.1); /* Scale the icon up a bit when hovered */
+}
+
+/* Styling for the SVG icons */
+#social-media-links svg {
+    width: 100%; /* Full width of its container, which is set to 24px */
+    height: 100%; /* Full height of its container, which is set to 24px */
+    fill: currentColor; /* Using the current text color */
+}
+
+/* You can set specific colors for each social media icon, or use the color provided in the SVG itself */
+#social-media-links a[href*="facebook.com"] svg {
+    fill: #1877F2;
+}
+
+#social-media-links a[href*="twitter.com"] svg {
+    fill: #1DA1F2;
+}
+
+#social-media-links a[href*="instagram.com"] svg {
+    fill: #E4405F;
+}

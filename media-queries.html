@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="css/media-queries.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div class="alert-info hidden-on-desktop">
+    <a href="#main">Skip to main content</a>
+</div>
+<h1>Company</h1>
+<nav>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<div class="header-img">
+    <img src="https://via.placeholder.com/900x400?" alt="">
+</div>
+<section id="main" class="main">
+    <h2>Main Section</h2>
+    <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
+</section>
+<section class="sub-section">
+    <h2>Sub-section</h2>
+    <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
+</section>
+<footer>
+    <!-- Other footer content here -->
+    <div id="social-media-links">
+        <!-- Facebook SVG icon -->
+        <a href="https://facebook.com">
+            <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="#1877F2" d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2zm0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"></path>
+                <path fill="#FFF" d="M14.8 9.5h-1.7V8.3c0-.5.3-.6.6-.6h1V6h-1.7c-2 0-2.4 1-2.4 2.4v1.2H9v1.6h1.2V16h2.5v-6.9h1.7l.3-1.6z"></path>
+            </svg>
+        </a>
+        <!-- Twitter SVG icon -->
+        <a href="https://twitter.com">
+            <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="#1DA1F2" d="M22.46 6.34a8.88 8.88 0 0 1-2.48.68 4.37 4.37 0 0 0 1.94-2.41 8.75 8.75 0 0 1-2.76 1.05 4.35 4.35 0 0 0-7.72 2.98 12.32 12.32 0 0 1-8.96-4.54 4.35 4.35 0 0 0 1.35 5.8 4.3 4.3 0 0 1-2-.54v.05a4.35 4.35 0 0 0 3.48 4.27 4.31 4.31 0 0 1-2 .07 4.36 4.36 0 0 0 4.06 3 8.76 8.76 0 0 1-5.42 1.87A12.37 12.37 0 0 0 8.66 21 12.34 12.34 0 0 0 21.41 8.79c0-.19 0-.37 0-.56a8.83 8.83 0 0 0 2.2-2.26"></path>
+            </svg>
+        </a>
+        <!-- Instagram SVG icon -->
+        <a href="https://instagram.com">
+            <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="#E4405F" d="M12 2.2c3.1 0 3.5 0 4.7.1 1.1 0 1.8.5 2.2 1 .4.5 1 1 1.4 2 .1 1.2.1 1.6.1 4.7s0 3.5-.1 4.7c-.1 1.1-.5 1.8-1 2.2-.5.4-1 1-2 1.4-.1 1.2-.2 1.6-1.3 2.8-1 1-2.5 1.3-3.6 1.3-1.4.1-1.8.1-5 .1s-3.6 0-4.8-.1c-1.1-.1-1.8-.5-2.2-1-.4-.5-1-1-1.4-2-.1-1.2-.1-1.6-.1-4.7s0-3.5.1-4.7c.1-1.1.5-1.8 1-2.2.5-.4 1-1 2-1.4 1.2-.1 1.6-.1 4.7-.1s3.5 0 4.7.1zm0-1.7c-3.1 0-3.6.1-4.9.1-1.2.1-2 .5-2.7 1.1-.7.6-1.3 1.4-1.8 2.7-.1 1.3-.1 1.8-.1 5s0 3.7.1 4.9c.1 1.2.5 2 1.1 2.7.6.7 1.4 1.3 2.7 1.8 1.3.1 1.8.1 4.9.1s3.6 0 4.9-.1c1.2-.1 2-.5 2.7-1.1.7-.6 1.3-1.4 1.8-2.7.1-1.3.1-1.8.1-4.9s0-3.6-.1-4.9c-.1-1.2-.5-2-1.1-2.7-.6-.7-1.4-1.3-2.7-1.8-1.3-.1-1.8-.1-4.9-.1z"></path>
+                <path fill="#E4405F" d="M12 16.1c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6.6c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5-1.1-2.5-2.5-2.5z"></path>
+                <circle fill="#E4405F" cx="18.2" cy="5.8" r="1.4"></circle>
+            </svg>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

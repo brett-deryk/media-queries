@@ -76,7 +76,7 @@ nav {
     /* Split main content and sub-section side by side on desktop */
     .main, .sub-section {
         display: inline-block;
-        width: 48%; /* Allow for some margin between the two sections */
+        width: 46%; /* Allow for some margin between the two sections */
     }
     nav {
         position: absolute;
